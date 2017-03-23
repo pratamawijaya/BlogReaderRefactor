@@ -10,7 +10,7 @@ android:
     - android-25
     - extra-android-m2repository
 script:
-    - ./gradlew clean test assembleDevelopmentDebug jacocoTestReport
+    - ./gradlew clean test assembleDebug jacocoTestReport
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
